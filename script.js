@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "573122433603";
+const WHATSAPP_NUMBER = "573103725246";
 const itemConfig = {
   forro: { label: "Forro para celular", icon: "▣", check: "check-forro", detail: () => document.querySelector("#case-color").value },
   audifonos: { label: "Audífonos inalámbricos", icon: "◉", check: "check-audifonos", detail: () => document.querySelector("#buds-color").value },
