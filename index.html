@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arma tu combo de accesorios móviles con OLEJAN TECH.">
+  <title>OLEJAN TECH | Arma tu combo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="OLEJAN TECH, inicio"><span class="logo-crop"><img src="assets/logo-olejan-tech.jpg" alt="Logo OLEJAN TECH"></span><span class="brand-name">OLEJAN <b>TECH</b><small>Accesorios móviles</small></span></a>
+    <button class="menu-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#catalogo">Productos</a><a class="active" href="#combo">Arma tu combo</a><a href="#contacto">Contacto</a></nav>
+    <a class="header-chat" data-whatsapp href="#"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.6 9.6 0 0 0-8.2 14.6L2.5 21.5l5-1.3A9.6 9.6 0 1 0 12 2Zm0 17.4c-1.5 0-2.9-.4-4.1-1.1l-.4-.2-2.9.8.8-2.8-.2-.4A7.7 7.7 0 1 1 12 19.4Zm4.3-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-1.3-.6-2.3-1.4-3.1-2.6-.2-.3.2-.5.6-1 .1-.2.1-.3 0-.5l-.7-1.8c-.2-.5-.5-.4-.7-.4h-.5c-.2 0-.5.1-.7.4-.7.7-1 1.6-.9 2.5.2 2.5 2.2 4.7 4.4 5.8 2.1 1 3.2 1.1 4.4.9.7-.1 1.4-.7 1.6-1.3.2-.6.2-1.1.1-1.2-.2-.2-.5-.3-1.1-.6Z"/></svg>WhatsApp</a>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div><span class="kicker">COMBINA · PERSONALIZA · COTIZA</span><h1>¡Arma tu <em>combo!</em></h1><p>Combina tus accesorios favoritos y crea un paquete a tu medida.</p><a href="#combo" class="hero-button">Empezar mi combo <span>→</span></a></div>
+      <div class="hero-products" aria-hidden="true"><span class="hero-case"></span><span class="hero-buds">●●</span><span class="hero-watch">10<br>08</span><span class="hero-glass"></span></div>
+    </section>
+    <section class="catalog-ribbon" id="catalogo" aria-labelledby="catalog-title">
+      <div class="catalog-intro"><span>NUESTRO CATÁLOGO</span><h2 id="catalog-title">Productos que manejamos</h2><p>Encuentra el accesorio ideal para tu celular.</p></div>
+      <button class="catalog-arrow previous" id="catalog-previous" type="button" aria-label="Productos anteriores">‹</button>
+      <div class="catalog-track" id="catalog-track">
+        <button class="catalog-card" type="button" data-go-to="forro"><div class="catalog-picture"><img src="assets/forros-colores.jpg" alt="Forros para celular"></div><strong>Forros</strong><span>Ver opciones →</span></button>
+        <button class="catalog-card" type="button" data-go-to="audifonos"><div class="catalog-picture"><img src="assets/audifonos-colores.jpg" alt="Audífonos inalámbricos"></div><strong>Audífonos</strong><span>Ver opciones →</span></button>
+        <button class="catalog-card" type="button" data-go-to="smartwatch"><div class="catalog-picture catalog-watch"><img src="assets/catalogo-combos.jpg" alt="Relojes inteligentes"></div><strong>Smartwatch</strong><span>Ver opciones →</span></button>
+        <button class="catalog-card" type="button" data-go-to="vidrio"><div class="catalog-picture catalog-glass"><i></i><i></i></div><strong>Vidrios</strong><span>Ver opciones →</span></button>
+      </div>
+      <button class="catalog-arrow next" id="catalog-next" type="button" aria-label="Productos siguientes">›</button>
+      <div class="catalog-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </section>
+    <section class="builder" id="combo">
+      <div class="builder-title"><div><span>CREA TU PAQUETE</span><h2>Elige tus productos</h2></div><p>Puedes combinar cualquiera de las cuatro categorías. El precio se confirma por WhatsApp.</p></div>
+      <div class="builder-grid">
+        <section class="options-panel" aria-label="Opciones del combo">
+          <label class="phone-field"><span>Modelo del celular <b>*</b></span><input id="phone-model" type="text" placeholder="Ejemplo: Samsung A55" autocomplete="off" required><small>Necesario para confirmar el forro y el vidrio correctos.</small></label>
+          <article class="option-card selected" data-item="forro"><input type="checkbox" id="check-forro" checked><div class="option-image"><img src="assets/forros-colores.jpg" alt="Forros de diferentes colores"></div><div class="option-copy"><span>1</span><div><h3>Elige tu forro</h3><p>Colores y estilos para tu celular</p><select id="case-color" aria-label="Color del forro"><option>Turquesa</option><option>Rosado</option><option>Morado</option><option>Negro</option></select></div></div><label for="check-forro" class="checkmark" aria-label="Agregar forro">✓</label></article>
+          <article class="option-card selected" data-item="audifonos"><input type="checkbox" id="check-audifonos" checked><div class="option-image"><img src="assets/audifonos-colores.jpg" alt="Audífonos inalámbricos de colores"></div><div class="option-copy"><span>2</span><div><h3>Agrega audífonos</h3><p>Inalámbricos y en varios colores</p><select id="buds-color" aria-label="Color de audífonos"><option>Verde menta</option><option>Rosado</option><option>Amarillo</option><option>Azul</option><option>Negro</option><option>Blanco</option></select></div></div><label for="check-audifonos" class="checkmark" aria-label="Agregar audífonos">✓</label></article>
+          <article class="option-card selected" data-item="smartwatch"><input type="checkbox" id="check-smartwatch" checked><div class="option-image collage-watch"><img src="assets/catalogo-combos.jpg" alt="Reloj inteligente"></div><div class="option-copy"><span>3</span><div><h3>Agrega un smartwatch</h3><p>Tu aliado para actividad y llamadas</p><select id="watch-color" aria-label="Color del smartwatch"><option>Negro</option><option>Rosado</option><option>Blanco</option></select></div></div><label for="check-smartwatch" class="checkmark" aria-label="Agregar smartwatch">✓</label></article>
+          <article class="option-card selected" data-item="vidrio"><input type="checkbox" id="check-vidrio" checked><div class="option-image glass-icon"><span></span></div><div class="option-copy"><span>4</span><div><h3>Protege con vidrio</h3><p>Vidrio templado para mayor seguridad</p></div></div><label for="check-vidrio" class="checkmark" aria-label="Agregar vidrio">✓</label></article>
+        </section>
+        <section class="preview-panel" id="productos">
+          <div class="panel-heading"><h2>Tu combo</h2><span>Vista previa</span></div>
+          <div class="combo-stage" id="combo-stage"><div class="stage-ring"></div><img class="stage-case combo-object" data-preview="forro" src="assets/forros-colores.jpg" alt="Forro seleccionado"><img class="stage-buds combo-object" data-preview="audifonos" src="assets/audifonos-colores.jpg" alt="Audífonos seleccionados"><div class="stage-watch combo-object" data-preview="smartwatch"><span>10:08</span><small>♥ 72</small></div><div class="stage-glass combo-object" data-preview="vidrio"></div><p class="empty-combo" hidden>Selecciona al menos un producto</p></div>
+          <div class="selection-chips" id="selection-chips"></div>
+        </section>
+        <aside class="summary-panel"><div class="panel-heading"><h2>Resumen de tu combo</h2><span id="item-count">4 productos</span></div><div class="summary-list" id="summary-list"></div><div class="model-summary"><span>Modelo del celular</span><strong id="model-summary">Sin especificar</strong></div><div class="price-note"><small>Valor del combo</small><strong>Precio por confirmar</strong><span>Te respondemos por WhatsApp</span></div><button class="whatsapp-button" id="quote-combo" type="button"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.6 9.6 0 0 0-8.2 14.6L2.5 21.5l5-1.3A9.6 9.6 0 1 0 12 2Zm0 17.4c-1.5 0-2.9-.4-4.1-1.1l-.4-.2-2.9.8.8-2.8-.2-.4A7.7 7.7 0 1 1 12 19.4Zm4.3-5.7c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.7.9c-.1.2-.3.2-.5.1-1.3-.6-2.3-1.4-3.1-2.6-.2-.3.2-.5.6-1 .1-.2.1-.3 0-.5l-.7-1.8c-.2-.5-.5-.4-.7-.4h-.5c-.2 0-.5.1-.7.4-.7.7-1 1.6-.9 2.5.2 2.5 2.2 4.7 4.4 5.8 2.1 1 3.2 1.1 4.4.9.7-.1 1.4-.7 1.6-1.3.2-.6.2-1.1.1-1.2-.2-.2-.5-.3-1.1-.6Z"/></svg>Cotizar por WhatsApp</button><p class="helper-text" id="action-message" role="status"></p></aside>
+      </div>
+    </section>
+    <section class="benefits"><div><span>🚚</span><strong>Envíos a toda Colombia</strong></div><div><span>💬</span><strong>Atención personalizada</strong></div><div><span>🛡️</span><strong>Compra con confianza</strong></div></section>
+  </main>
+  <footer id="contacto"><strong>OLEJAN TECH</strong><span>Accesorios móviles para tu día a día</span><a data-whatsapp href="#">312 243 3603</a></footer>
+  <script src="script.js"></script>
+</body></html>
